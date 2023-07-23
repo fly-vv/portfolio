@@ -144,14 +144,14 @@ body {
 
 .button {
   border: none;
-  opacity: 50%;
+  opacity: 40%;
   border-radius: 50%;
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 24px;
-  margin: 4px 2px;
+  font-size: 26px;
+  margin: 24px 24px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.5s;
   cursor: pointer;

@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+}
+:root {
+  --index: calc(1vw + 1vh);
+  --text: #fdfdfb;
+  --side-small: 10;
+  --side-big: 10;
+  --transition: transform 0.75s cubic-bezier(0.075, 0.5, 0, 1);
+}
+
+/* @font-face {
+    front-family: Raleway, sans-serif;
+    src: url(font/raleway-v22-cyrillic-100.woff2);
+  }
+  @font-face {
+    front-family: Raleway, sans-serif;
+    src: url(font/raleway-v22-cyrillic-100.woff2);
+    font-weight: 900;
+  } */
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(223, 230, 235);
+  font-family: raleway_f;
+  line-height: 1.2;
+}
+
+.container svg {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.container svg g {
+  position: relative;
+  fill: rgb(244, 240, 240);
+  transition: all ease 1.5s;
+}
+
+.container svg:hover g {
+  position: relative;
+  fill: rgba(7, 166, 229, 0.521);
+}
+
+.c-button {
+  position: relative;
+  opacity: 90%;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.header-second {
+  position: relative;
+  padding: 10em;
+  font-size: calc(var(--index) * 0.9);
+} /* about me */
+
+/* .pic {
+  position: relative;
+  width: 500px;
+  height: auto;
+  float: right;
+  clear: left;
+  border-radius: 8px;
+}
+/* картинка контактов */
+
+.header-second {
+  position: relative;
+  font-size: calc(var(--index) * 1);
+  margin-bottom: auto;
+  left: 0.5vh;
+}
+.header-contact {
+  position: relative;
+  font-size: calc(var(--index) * 1);
+  margin-bottom: auto;
+  line-height: 200%;
+}
+.frame {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition), 0.75s ease;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.frame-media {
+  position: relative;
+  width: calc(var(--index) * var(--side-small));
+  height: calc(var(--index) * var(--side-big));
+  background-position: center;
+  background-size: cover;
+}
+
+.frame-media_left {
+  right: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+}
+
+.frame-media_right {
+  left: calc(var(--side-small) / 2 * var(--index)+ var(--gutter));
+}
+
+.frame_bg {
+  background-color: rgb(0 0 0 / 0.87);
+}
+
+.text-right > * {
+  position: relative;
+  left: 18vw;
+}
+.text-left > * {
+  position: relative;
+  right: 25vw;
+}
+.frame h3 {
+  font-size: calc(var(--index) * 3);
+}
+
+.frame p {
+  max-width: 30vw;
+  margin-top: 3vh;
+}
