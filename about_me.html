@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark duck</title>
+
+    <link rel="stylesheet" href="CSS/about_me.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="JS/about_me.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="frame frame">
+      <div class="frame__content text-left">
+        <h3>About Me</h3>
+        <p>
+          I am an aspiring artist from Russia, I am just learning to draw. If
+          you like my pictures and want to tell me something, you can write to
+          me by e-mail below
+        </p>
+        <p class="header-contact" style="margin: 0px 0px 0px 0px; text-align: left; opacity:0.7;"> you E-MAIL@gmail.com</p>
+        <body onload="printtext()">
+          <h2 style="margin: 10px 0px 150px 0px; text-align: left;">
+            <font id="text"></font>
+            <a href="mailto:zoombymen@outlook.com" title="Write me" class="c-button c-button--icon">
+              <svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 20 20"> xmlns="http://www.w3.org/2000/svg">
+                <g>
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+              </g>
+              </svg>
+             </a>
+        
+        </body>
+      </div>
+      
+    </div>
+    <div class="frame frame">
+      <div class="frame_content">
+        <div
+          class="frame-media frame-media_right"
+          style="background-image: url(img/pic/me.jpg)"
+        ></div>
+      </div>
+    </div>
+
+    <!-- <div class="container text-center my-5">
+    <div class="container">
+      <h1 class="header-second">About Me
+          <div id="pic">
+           <img src="img\pic\me.jpg" class="pic" alt="If so, then I"/>
+         </div>
+      </h1> -->
+
+    <!-- </div>
+          <div class="col-lg-6 col-md-8 mx-auto">
+      <h2 class="header-contact" style="margin: -80px 0px 80px 0px; text-align: center;">I am an aspiring artist from Russia, I am just learning to draw. If you like my pictures and want to tell me something, you can write to me by e-mail below</h2>
+      <p class="header-contact" style="margin: -80px 0px 80px 0px; text-align: center; opacity:0.7;"> you E-MAIL@gmail.com</p>
+      <body onload="printtext()">
+        <h2 style="margin: -40px 0px 80px 0px; text-align: center;">
+          <font id="text"></font>
+          <a href="mailto:zoombymen@outlook.com" title="Write me" class="c-button c-button--icon">
+            <svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 20 20"> xmlns="http://www.w3.org/2000/svg">
+              <g>
+              <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+              <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+            </g>
+            </svg>
+           </a>
+        </h2> -->
+
+    <!-- <script src="https://yastatic.net/share2/share.js"></script>
+    <div class="ya-share2" data-curtain data-size="l" data-lang="en" data-color-scheme="whiteblack" data-services="vkontakte,odnoklassniki,telegram,twitter,tumblr" data-url="http://127.0.0.1:5500/places.html"></div> -->
+  </body>
+</html>
